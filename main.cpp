@@ -8,7 +8,7 @@
 using namespace std;
 
 #define DEBUG 0 // 0 inativo 1 ativo
-#define SHOWLOG 1 // 0 inativo 1 ativo
+#define SHOWLOG 0 // 0 inativo 1 ativo
 
 int random(int min, int max){
 
