@@ -84,7 +84,7 @@ int main() {
     string status = "Livre";
 
     /// PARTE RESPOSÁVEL POR MOSTRAR A VISÃO DO PROFESSOR
-
+    cout << endl << endl << "     ---------------------------------------- PROFESSOR ----------------------------------------" << endl << endl;
     cout << "Tempo de evento   Aluno   Tipo de Evento   Estado do Professor      Tempo de Ocupacao   Alunos no sistema" << endl; // Retirando tempo de entrada, tempo na fila
     cout << "       0             0         Inicio             Livre                    0                    0" << endl;
     while(1){
@@ -122,7 +122,7 @@ int main() {
             }
             if(posAtual == alunos.size() - 1)
                 status = "Livre";
-            cout << left << "       " << contador + 1 << "           " << alunos[posAtual].getId() << "         "  << "Saida";
+            cout << left << "       " << contador + 1 << "           " << alunos[posAtual].getId() << "         "  << " Saida ";
             cout << "            " << status <<"                      " << tempoOcupacao << "                   " <<  alunosNoSistema  << endl;
             filaTotal += alunos[posAtual].getTempoFila();
             alunos[posAtual].setSaida(contador + 1);
@@ -139,7 +139,7 @@ int main() {
     double tempoMedioExecucao = atendimentoTotal / alunos.size();
 
     /// PARTE RESPOSÁVEL POR MOSTRAR A VISÃO DO ALUNO
-    cout << "   ---------------------------------------- ALUNO ----------------------------------------" << endl << endl;
+    cout << endl << endl << "     ---------------------------------------- ALUNO ----------------------------------------" << endl << endl;
     cout << "Aluno   Tempo de chegada   Tempo de entrada   Tempo de saida   Tempo de fila   Tempo de atendimento" << endl;
     for (int i = 0; i < alunos.size() ; ++i) {
 
